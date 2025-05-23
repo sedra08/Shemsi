@@ -55,16 +55,13 @@
             <div class="row" style="height: 550px;">
                 <div class="col-lg-6 d-flex justify-content-center align-items-center pb-3 ps-lg-5">
                     <div id="heroleft">
-                        <h1 class="pb-4">Root canals</h1>
-                        <p class="pb-5">Root canals have gotten a bad
-                            reputation, but us dentists don’t know why!
-                            These are the types of treatments that actually
-                            make you feel better!</p>
+                        <h1 class="pb-4">Canaux radiculaires</h1>
+                        <p class="pb-5">Les traitements de canal ont mauvaise réputation, mais nous, dentistes, ignorons pourquoi ! 
+                            Ce sont des traitements qui vous font réellement du bien !</p>
 
                         <div class="d-flex justify-content-lg-between align-items-lg-center" id="spacing">
                             <div>
-                                <button class="btn bookappointment">Book
-                                    appointment</button>
+                                <button class="btn bookappointment">Prendre rendez-vous</button>
                             </div>
 
                         </div>
@@ -173,22 +170,11 @@
     <!-- gallery section start  -->
     <div class="container-fluid gallery pt-5 pb-5">
         <div class="container">
-            <h5>GALLERY</h5>
+            <h5>GALERIE</h5>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="w-75">
-                        <h1>Some proof about our
-                            services for you</h1>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-end">
-                    <div>
-                        <p>
-                            Lorem ipsum is placeholder text commonly used in
-                            the <br>
-                            graphic, print, and publishing industries for
-                            previewing layouts <br> and visual mockups.
-                        </p>
+                        <h1>Quelques preuves de nos services pour vous</h1>
                     </div>
                 </div>
             </div>
@@ -221,202 +207,195 @@
     <!-- gallery section end  -->
 
     <!-- book appointment section start  -->
-    <div class="container-fluid appointment pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 p-0 rounded-5 d-flex align-items-center justify-content-center p-4">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.345808218307!2d72.92167707469721!3d20.368627010125138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ce314e97fded%3A0xc1c3d2e3e9848519!2sAllied%20InfoSoft!5e0!3m2!1sen!2sin!4v1734603138206!5m2!1sen!2sin"
-                        width="75%" height="100%" style="border-radius: 30px;"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-4">
-                        <h5 class="mb-3">BOOK APPOINTMENT</h5>
-                        <h1 class="mb-3">Care at Dentalist is pleasure</h1>
-                        <p class="mb-4">Lorem ipsum is placeholder text
-                            commonly used in
-                            the
-                            graphic, print, and <br> publishing industries
-                            for
-                            previewing layouts and visual</p>
-                        <form action>
-                            <div class="row">
-                                <div class="col-lg-6 mt-2">
-                                    <div class="mb-3">
-                                        <label for class="form-label">NAME</label>
-                                        <input type="text" class="form-control p-2" style="border-radius: 10px;"
-                                            name="username" id="username" aria-describedby="emailHelpId"
-                                            placeholder="Enter your name..." />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mt-2">
-                                    <div class="mb-3">
-                                        <label for class="form-label">EMAIL
-                                            ADDRESS</label>
-                                        <input type="email" class="form-control p-2" style="border-radius: 10px;"
-                                            name="useremail" id="useremail" aria-describedby="emailHelpId"
-                                            placeholder="Your email addres.." />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mt-2">
-                                    <div class="mb-3">
-                                        <label for class="form-label">SERVICES</label>
-                                        <select class="form-select form-select-lg p-2"
-                                            style="border-radius: 10px;color: #212529;font-size: 17px;" name id>
-                                            <option selected>Select
-                                                one</option>
-                                            <option value>Teeth
-                                                Whitening</option>
-                                            <option value>preventive
-                                                care</option>
-                                            <option value>restorative
-                                                care</option>
-                                            <option value>Cleanings</option>
-                                            <option value>emergency dental
-                                                care</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mt-2">
-                                    <div class="mb-3">
-                                        <label for class="form-label">DEPARTMENT</label>
-                                        <select class="form-select form-select-lg p-2"
-                                            style="border-radius: 10px;color: #212529;font-size: 17px;"
-                                            name="department" id="department">
-                                            <option selected>Select
-                                                Department</option>
-                                            <option value></option>
-                                            <option value></option>
-                                            <option value></option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 mt-2 mb-2">
-                                    <div class="mb-3">
-                                        <label for class="form-label">MESSAGES</label>
-                                        <textarea class="form-control" name="message" id="message" rows="5"
-                                            style="border-radius: 10px;"></textarea>
-                                    </div>
+    <div class="col-lg-6" data-aos="fade-left">
+                <div class="p-4">
+                    <h5 class="mb-3">PRENDRE RENDEZ-VOUS</h5>
+                    <h1 class="mb-3">Les soins chez Shemsi sont un plaisir</h1>
+                    <p class="mb-4">Prenez rendez-vous et découvrez une expérience dentaire où le 
+                        soin rencontre le plaisir, dans un environnement accueillant et serein.</p>
+                    <form action>
+                        <div class="row">
+                            <div class="col-lg-6 mt-2">
+                                <div class="mb-3">
+                                    <label for
+                                           class="form-label"> <b>NOM COMPLET :</b></label>
+                                    <input
+                                        type="text"
+                                        class="form-control p-2"
+                                        style="border-radius: 10px;"
+                                        name="username"
+                                        id="username"
+                                        aria-describedby="emailHelpId" />
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center contact">
-                                <div class="d-flex justify-content-start align-items-center gap-3">
-                                    <div class="p-2"
-                                        style="border-radius: 5px;background: linear-gradient(80deg, rgb(255, 255, 255) 0%, rgba(88,63,188,1) 100%);">
-                                        <i class="fa-solid fa-phone-volume p-2 rounded-4 text-light"
-                                            style="border-radius: 5px;background-color: #583FBC;"></i>
-                                    </div>
-                                    <div>
-                                        <h6>Dental 24H Emergency</h6>
-                                        <h6>03 482 394 123</h6>
-                                    </div>
+                            <div class="col-lg-6 mt-2">
+                                <div class="mb-3">
+                                    <label for
+                                           class="form-label"> <b>NUMÉRO DE TÉLÉPHONE :</b>
+                                        </label>
+                                    <input
+                                        type="text"
+                                        class="form-control p-2"
+                                        style="border-radius: 10px;"
+                                        name="useremail"
+                                        id="useremail"
+                                        aria-describedby="emailHelpId" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-2">
+                                <div class="mb-3">
+                                    <label for
+                                           class="form-label"> <b>SERVICES :</b></label>
+                                    <select
+                                        class="form-select form-select-lg p-2"
+                                        style="border-radius: 10px;color: #212529;font-size: 17px;"
+                                        name
+                                        id>
+                                        <option selected>Soins conservateurs</option>
+                                        <option value>Détartrage</option>
+                                        <option value>Parodontie</option>
+                                        <option value>Blanchiment</option>
+                                        <option value>Prothèse dentaire</option>
+                                        <option value>Implant dentaire</option>
+                                        <option value>Protège-dents</option>
+                                        <option value>Nettoyage</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-2">
+                                <div class="mb-3">
+                                    <label for="date" class="form-label"> <b>DATE :</b></label>
+                                    <input type="date" class="form-control" id="date" min="{{ date('Y-m-d') }}" required>
+                                    <div class="invalid-feedback">Veuillez sélectionner une date valide</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-2 mb-2">
+                                <div class="mb-3">
+                                    <label for
+                                           class="form-label"> <b>MESSAGES :</b></label>
+                                    <textarea class="form-control"
+                                              name="message"
+                                              id="message" rows="5"
+                                              style="border-radius: 10px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex justify-content-between align-items-center contact">
+                            <div
+                                class="d-flex justify-content-start align-items-center gap-3">
+                                <div class="p-2"
+                                     style="border-radius: 5px;background: linear-gradient(80deg, rgb(255, 255, 255) 0%, rgba(88,63,188,1) 100%);">
+                                    <i
+                                        class="fa-solid fa-phone-volume p-2 rounded-4 text-light"
+                                        style="border-radius: 5px;background-color: #583FBC;"></i>
                                 </div>
                                 <div>
-                                    <button type="submit" class="btn">Book
-                                        an appointment</button>
+                                    <h6>Urgence dentaire 24h/24</h6>
+                                    <h6>05374-05952</h6>
                                 </div>
                             </div>
+                            <div>
+                                <button type="submit" class="btn">Confirmer</button>
+                            </div>
+                        </div>
 
-                        </form>
-                    </div>
+                    </form>
                 </div>
-            </div>
-        </div>
     </div>
     <!-- book appointment section end  -->
 
     <!-- footer section start  -->
     <div class="container-fluid footer">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-lg-6 ">
-                    <div>
-                        <a class="d-flex justify-content-start align-items-center gap-2 fw-bold pb-4" href="#"><img
-                                src="./images/home/logo.png" alt="wait for image">Dentalist.</a>
+    <div class="container">
+        <div class="row pt-5" data-aos="fade-up">
+            <div class="col-lg-6 ">
+                <div>
+                    <a
+                        class="d-flex justify-content-start align-items-center gap-2 fw-bold pb-4"
+                        href="#"><img src="./images/home/logo.png"
+                                      alt="wait for image">Shemsi</a>
 
-                        <p class="pb-5">Dental Care Seattle is a top-rated
-                            local practice
-                            for cosmetic, <br> preventative, and restorative
-                            dentistry on First Hill</p>
+                    <p class="pb-5">Le centre dentaire <b>Shemsi</b> offre des services de qualité, attirant la confiance des patients locaux.</p>
 
-                        <p>FOLLOW US ON</p>
-                        <div class>
-                            <i class="fa-brands fa-facebook-f pe-4"></i>
-                            <i class="fa-brands fa-twitter pe-4"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
+                    <p>SUIVEZ-NOUS SUR</p>
+                    <div class>
+                        <i class="fa-brands fa-facebook-f pe-4"></i>
+                        <i class="fa-brands fa-twitter pe-4"></i>
+                        <i class="fa-brands fa-instagram"></i>
                     </div>
-                </div>
-                <div class="col-lg-2">
-                    <ul>
-                        <h6 class="pb-4">
-                            QUICK LINKS
-                        </h6>
-                        <li class="list-unstyled pb-3"><a href>About
-                                Us</a></li>
-                        <li class="list-unstyled pb-3"><a href>Dental
-                                Services</a></li>
-                        <li class="list-unstyled pb-3"><a href>Dentist</a></li>
-                        <li class="list-unstyled pb-3"><a href>Blog</a></li>
-                        <li class="list-unstyled pb-3"><a href>FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <ul>
-                        <h6 class="pb-4">CONTACT & INFORMATION</h6>
-                        <li class="pb-4">
-                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                <div class="p-2 box rounded-4">
-                                    <i class="fa-solid fa-phone-volume p-2 rounded-3"></i>
-                                </div>
-                                <div class="lh-0">
-                                    <h6>Phone Number</h6>
-                                    <h6 class="fw-bold">+088 123 654
-                                        987</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pb-4">
-                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                <div class="p-2 box rounded-4">
-                                    <i class="fa-solid fa-phone-volume p-2 rounded-3"></i>
-                                </div>
-                                <div class="lh-0">
-                                    <h6>Open Hour</h6>
-                                    <h6 class="fw-bold">09:00 AM - 18:00
-                                        PM</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-start align-items-center gap-3">
-                                <div class="p-2 box rounded-4">
-                                    <i class="fa-solid fa-phone-volume p-2 rounded-3"></i>
-                                </div>
-                                <div class="lh-0">
-                                    <h6>Clinic Address</h6>
-                                    <h6 class="fw-bold">35 West Dental
-                                        Street California 1004</h6>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
-            <div class="row pt-5 pb-3 bottom">
-                <div class="col-lg-6  justify-content-sm-center">
-                    <p> Dentalist. All Right Reserved </p>
-                </div>
-                <div class="col-lg-6 d-flex gap-5 justify-content-lg-end justify-content-sm-center">
-                    <div class="d-flex gap-5">
-                        <p>Terms of Use</p>
-                        <p>Privacy Policy</p>
-                    </div>
+            <div class="col-lg-2">
+                <ul>
+                    <h6 class="pb-4">
+                        QUICK LINKS
+                    </h6>
+                    <li class="list-unstyled pb-3"><a href="{{ route('about') }}">À propos</a></li>
+                    <li class="list-unstyled pb-3"><a href="{{ route('services')  }}">Nos services</a></li>
+                    <li class="list-unstyled pb-3"><a href>Shemsi</a></li>
+                    <li class="list-unstyled pb-3"><a href="{{ route('blog') }}">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <h6 class="pb-4">COORDONNÉES</h6>
+                    <li class="pb-4">
+                        <div
+                            class="d-flex justify-content-start align-items-center gap-3">
+                            <div class="p-2 box rounded-4">
+                                <i
+                                    class="fa-solid fa-phone-volume p-2 rounded-3"></i>
+                            </div>
+                            <div class="lh-0">
+                                <h6>Numéro de téléphone</h6>
+                                <h6 class="fw-bold">05374-05952</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-4">
+                        <div
+                            class="d-flex justify-content-start align-items-center gap-3">
+                            <div class="p-2 box rounded-4">
+                                <i
+                                    class="fa-solid fa-phone-volume p-2 rounded-3"></i>
+                            </div>
+                            <div class="lh-0">
+                                <h6>Heures d'ouverture</h6>
+                                <h6 class="fw-bold">09:00 - 13:30 <br>15:00 - 19:30</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div
+                            class="d-flex justify-content-start align-items-center gap-3">
+                            <div class="p-2 box rounded-4">
+                                <i
+                                    class="fa-solid fa-phone-volume p-2 rounded-3"></i>
+                            </div>
+                            <div class="lh-0">
+                                <h6>Adresse de la clinique</h6>
+                                <h6 class="fw-bold">LOTISSEMENT AZIZA JIHANE, IMM 13, APPT 2, 1 ER ETAGE, Temara 12040</h6>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-5 pb-3 bottom">
+            <div class="col-lg-6  justify-content-sm-center">
+                <p> © Shemsi. All Right Reserved </p>
+            </div>
+            <div
+                class="col-lg-6 d-flex gap-5 justify-content-lg-end justify-content-sm-center">
+                <div class="d-flex gap-5">
+                    <p>Termes et conditions</p>
+                    <p>Politique de confidentialité</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- footer section end  -->
 
     <!-- Bootstrap JavaScript Libraries -->
