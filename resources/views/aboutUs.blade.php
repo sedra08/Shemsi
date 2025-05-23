@@ -54,16 +54,11 @@
                     <div
                         class="col-lg-6 left d-flex justify-content-start align-items-lg-center align-items-sm-start">
                         <div class="p-0">
-                            <h1 class="pb-3">About Us</h1>
-                            <p class="pb-5">We want you to feel amazing about
-                                your oral
-                                wellness.
-                                Not just <br> twice a year, but every time you
-                                take a
-                                bite, tell a joke, laugh, or <br> share a
-                                kiss.</p>
-                            <button type="button" class="btn">Contact
-                                Us</button>
+                            <h1 class="pb-3">À propos de nous</h1>
+                            <p class="pb-5">Nous voulons que vous vous sentiez bien dans votre bouche.
+                                Pas seulement deux fois par an, mais à chaque fois que vous prenez une bouchée, 
+                                racontez une blague, riez ou partagez un baiser.</p>
+                            <button type="button" class="btn">Contactez-nous</button>
                         </div>
                     </div>
                     <div class="col-lg-6">
