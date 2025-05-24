@@ -31,7 +31,6 @@ class UserAppointmentController extends Controller
 //            $test = Carbon::createFromFormat('h:i A',
 //                $request['appointment_time'])->format('H:i:s');
 //            dd($request->all(), $test);
-            // Validate the request
             $validator = Validator::make($request->all(), [
                 'name' => 'required|min:2|exists:users,name', // Ensure name exists in the users table
                 'email' => 'required|email|exists:users,email', // Ensure email is valid and exists
@@ -40,7 +39,6 @@ class UserAppointmentController extends Controller
                 'reason_for_visit' => 'nullable|string|max:255', // Optional field with max length
             ]);
 
-            // Handle validation failure
             if ($validator->fails())
             {
                 return redirect()->back()
@@ -57,11 +55,7 @@ class UserAppointmentController extends Controller
 
 
             $data['user_id'] = $userId;
-
-            // Check if the client has already sent a booking request for today and which is pending
-
-            // check with date
-
+            
 //            if (Appointment::hasPendingBookingToday($userId)) {
 //
 //                return redirect()
@@ -70,11 +64,9 @@ class UserAppointmentController extends Controller
 //            }
 
 
-            // Check if the slot is available
-
             if (Appointment::isSlotIsBooked($data['appointment_time'], $data['appointment_date']))
             {
-                // now need to suggest user to pick available slots
+
                 $availableSlots  = Appointment::fetchAvailableTimeSlot(now()->toDateString());
 
                 if (count($availableSlots) === 0)
@@ -139,12 +131,6 @@ class UserAppointmentController extends Controller
         return view('backend.appointments.client-appointment-page', compact('data', 'appointmentHistory'))->with(['success' => 'Your booking status'])->with('status', $data->status ?? null);
     }
 
-    // let's say today's all slot are booked but dentist still don't want to let go off client
-    // he sayed that i want you to do tight scheduling
-
-    // take time slot which customer asked let's say he/she asked for 4 then i will be checking how many clients are taken the time frame between 4 to 5
-//     with respect to the factor that say's only 4 request will fit in any time slot i will called this goldenSlotFactor it will be decide by doctor it can be
-//    6 also
     public function adjustAppointment($goldenSlotFactor, $clientAskedTimeSlot, $clientAskedDate)
     {
         $slot = Carbon::make($clientAskedTimeSlot)->format('H:i:s');
@@ -156,15 +142,12 @@ class UserAppointmentController extends Controller
         $start = strlen((string)$lowerSlot) == 1 ? "0$lowerSlot:00:00" : "$lowerSlot:00:00";
         $end = strlen((string)$upperSlot) == 1 ? "0$upperSlot:00:00" : "$upperSlot:00:00";
 
-        // check number of booking for the slot range
         $bookingNumber = Appointment::fetchNumberOfBookingInGiveTimeAndDate($start, $end, $clientAskedDate);
 
-        // the booking can not be greater than $goldenSlotFactor it can be equal
-        if ($bookingNumber < $goldenSlotFactor)
+            if ($bookingNumber < $goldenSlotFactor)
         {
             $maximumSlots[] = $start;
 
-            // first let's make array of slots with goldenSlotFactor
             if ($goldenSlotFactor == 4)
             {
                 $maximumSlots[] = strlen((string)$lowerSlot) == 1 ? "0$lowerSlot:15:00" : "$lowerSlot:15:00";
@@ -173,11 +156,9 @@ class UserAppointmentController extends Controller
             }
 
 
-            // Need to Check which slots are they
             $bookings = Appointment::fetchBookingsInGiveTimeAndDate($start, $end, $clientAskedDate);
             $bookingTimeSlotArray = $bookings->pluck('appointment_time')->toArray();
 
-            // let's push different slot that can be assignable to client
             $makedSlots = array_diff($maximumSlots, $bookingTimeSlotArray);
 
             return $makedSlots;
@@ -186,6 +167,5 @@ class UserAppointmentController extends Controller
 
         return [];
     }
-
 
 }
