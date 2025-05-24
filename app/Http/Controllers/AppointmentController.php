@@ -115,7 +115,6 @@ class AppointmentController extends Controller
         // fetch available slots
         $availableSlots = Appointment::fetchAvailableTimeSlot(now()->toDateString());
 
-        // need to send data
         // Find the appointment by ID
         $appointment = Appointment::find($request->id);
 
