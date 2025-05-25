@@ -33,29 +33,23 @@ class Appointment extends Model
 
     public static function fetchAvailableTimeSlot($date)
     {
-        // Define the start and end hours for the time slots
         $startHour = 9; // 9:00 AM
         $endHour = 21; // 9:00 PM
         $slots = [];
 
-        // Generate all time slots in HH:mm:ss format (e.g., 09:00:00, 09:30:00, etc.)
         for ($hour = $startHour; $hour < $endHour; $hour++) {
-            $slots[] = sprintf('%02d:00:00', $hour); // Format as HH:mm:ss
-            $slots[] = sprintf('%02d:30:00', $hour); // Format as HH:mm:ss
+            $slots[] = sprintf('%02d:00:00', $hour); 
+            $slots[] = sprintf('%02d:30:00', $hour); 
         }
 
-        // Fetch booked slots for the given date from the database
         $bookedSlots = self::where('appointment_date', $date)
             ->pluck('appointment_time')
             ->toArray();
 
-        // Filter out booked slots from the generated slots
         $availableSlots = array_diff($slots, $bookedSlots);
 
-        return array_values($availableSlots); // Return available time slots
+        return array_values($availableSlots); 
     }
-
-
 
     public static function fetchTheExistingBookingOfTodayByUserId($userId)
     {
@@ -86,8 +80,6 @@ class Appointment extends Model
             ->where('appointment_date', '<=', $endDate)
             ->get();
     }
-
-
 
     public function user()
     {
