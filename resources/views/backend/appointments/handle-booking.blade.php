@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Appointments') }}
+            {{ __('Rendez-vous') }}
         </h2>
     </x-slot>
 
@@ -10,16 +10,16 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <div class="w-full min-w-5xl bg-white shadow-lg rounded-lg p-6 mb-10">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Pending Appointments List</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Liste des rendez-vous en attente</h2>
                         <!-- Table -->
                         <div class="overflow-x-auto">
                             <table class="table-auto w-full border-collapse border border-gray-300" id="pending-table">
                                 <thead>
                                 <tr class="bg-gray-200 text-gray-700">
                                     <th class="border border-gray-300 px-4 py-2 text-left">#</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Appointment Time</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Appointment Date</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Nom</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Heure du rendez-vous</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Date de rendez-vous</th>
                                     <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
                                     <th class="border border-gray-300 px-4 py-2 text-left">Action</th>
                                 </tr>
@@ -48,13 +48,13 @@
                                                 type="button"
                                                 data-id="{{ $appointment->id }}"
                                                 class="confirm-appointment-btn px-6 py-2 bg-green-500 text-white font-semibold text-sm rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 transition duration-300 ease-in-out">
-                                                Confirm Appointment
+                                                Confirmer le rendez-vous
                                             </button>
                                             <button
                                                 type="button"
                                                 data-id="{{ $appointment->id }}"
                                                 class="cancel-appointment-btn px-6 py-2 bg-red-500 text-white font-semibold text-sm rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 transition duration-300 ease-in-out">
-                                                Cancel Appointment
+                                                Annuler le rendez-vous
                                             </button>
 
                                         </td>
@@ -62,7 +62,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="5" class="border border-gray-300 px-4 py-2 text-center text-gray-500">
-                                            No appointments found.
+                                            Aucun rendez-vous trouvé.
                                         </td>
                                     </tr>
                                 @endforelse
@@ -76,16 +76,16 @@
                     </div>
 
                     <div class="w-full min-w-5xl bg-white shadow-lg rounded-lg p-6 mb-10">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Confirmed Appointment List</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Liste des rendez-vous confirmés</h2>
                         <!-- Table -->
                         <div class="overflow-x-auto">
                             <table class="table-auto w-full border-collapse border border-gray-300" id="confirm-table">
                                 <thead>
                                 <tr class="bg-gray-200 text-gray-700">
                                     <th class="border border-gray-300 px-4 py-2 text-left">#</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Appointment Time</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Appointment Date</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Nom</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Heure du rendez-vous</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Date de rendez-vous</th>
                                     <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
                                     <th class="border border-gray-300 px-4 py-2 text-left">Action</th>
                                 </tr>
@@ -113,7 +113,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="5" class="border border-gray-300 px-4 py-2 text-center text-gray-500">
-                                            No appointments found.
+                                            Aucun rendez-vous trouvé.
                                         </td>
                                     </tr>
                                 @endforelse
@@ -127,16 +127,16 @@
                     </div>
 
                     <div class="w-full min-w-5xl bg-white shadow-lg rounded-lg p-6 mb-10">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Cancelled Appointment List</h2>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Liste des rendez-vous annulés</h2>
                         <!-- Table -->
                         <div class="overflow-x-auto">
                             <table class="table-auto w-full border-collapse border border-gray-300" id="cancel-table">
                                 <thead>
                                 <tr class="bg-gray-200 text-gray-700">
                                     <th class="border border-gray-300 px-4 py-2 text-left">#</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Name</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Appointment Time</th>
-                                    <th class="border border-gray-300 px-4 py-2 text-left">Appointment Date</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Nom</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Heure du rendez-vous</th>
+                                    <th class="border border-gray-300 px-4 py-2 text-left">Date de rendez-vous</th>
                                     <th class="border border-gray-300 px-4 py-2 text-left">Status</th>
                                     <th class="border border-gray-300 px-4 py-2 text-left">Action</th>
                                 </tr>
@@ -164,7 +164,7 @@
                                 @empty
                                     <tr>
                                         <td colspan="5" class="border border-gray-300 px-4 py-2 text-center text-gray-500">
-                                            No appointments found.
+                                            Aucun rendez-vous trouvé.
                                         </td>
                                     </tr>
                                 @endforelse
@@ -217,8 +217,6 @@
                         </td>
                     </tr>`;
 
-
-
                         // remove that <tr> form pending table
                         $('#pending-table').find(`#${id}`).remove();
 
@@ -231,9 +229,6 @@
                         alert('An error occurred. Please try again.');
                     }
                 });
-
-
-
 
             });
 
