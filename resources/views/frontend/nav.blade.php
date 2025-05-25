@@ -44,7 +44,7 @@
                                         href="{{ route('login') }}"
                                         class="btn btn1"
                                     >
-                                        Sign In
+                                        Se connecter
                                     </a>
 
                                     @if (Route::has('register'))
@@ -52,7 +52,7 @@
                                             href="{{ route('register') }}"
                                             class="btn btn2"
                                         >
-                                            Sign Up
+                                            S'inscrire
                                         </a>
                                     @endif
                                 @endauth
