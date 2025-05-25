@@ -138,7 +138,7 @@
                                     @empty
                                         <tr>
                                             <td colspan="5" class="border border-gray-300 px-4 py-2 text-center text-gray-500">
-                                                No appointments found.
+                                                Aucun rendez-vous trouvé.
                                             </td>
                                         </tr>
                                     @endforelse
@@ -165,11 +165,10 @@
                     .listen('AppointmentConfirmEvent', (event) => {
                         console.log("Here we are !!!")
                         console.log("From confirm==>", event);
-                        let statusBarDiv = $('.appointment-status-bar'); // Ensure this selects the correct element
+                        let statusBarDiv = $('.appointment-status-bar'); 
                         let statusSpan = $('.booked');
                         const { status } = event.appointment;
 
-                        // Remove all possible status classes
                         statusBarDiv.removeClass("bg-green-500 bg-blue-500 bg-red-500");
                         $('.pending').removeClass("text-green-500")
                         $('.pending').addClass("text-gray-400")
@@ -184,7 +183,7 @@
                         console.log("Here we are !!!")
                         console.log("From cancel==>", event);
 
-                        let statusBarDiv = $('.appointment-status-bar'); // Ensure this selects the correct element
+                        let statusBarDiv = $('.appointment-status-bar');
                         let statusSpan = $('.cancelled')
 
                         const { status } = event.appointment;
