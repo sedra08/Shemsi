@@ -1,5 +1,4 @@
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
-    <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
@@ -18,16 +17,15 @@
                     
                     @hasrole("admin")
                     <x-nav-link :href="route('dental-appointment.index')" :active="request()->routeIs('dental-appointment.index')">
-                        {{ __('Appointments') }}
+                        {{ __('Rendez-vous') }}
                     </x-nav-link>
                     @endhasrole
                     
                     @hasrole("user")
                     <x-nav-link :href="route('dental-appointment.client-booking-status-page')" :active="request()->routeIs('dental-appointment.client-booking-status-page')">
-                        {{ __('Appointments') }}
+                        {{ __('Rendez-vous') }}
                     </x-nav-link>
-                    @endhasrole
-                    
+                    @endhasrole                    
                 </div>
             </div>
 
