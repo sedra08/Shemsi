@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>Blog</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
             name="viewport"
@@ -49,9 +48,7 @@
     </head>
 
     <body>
-        <!-- navbar section start  -->
  @include('frontend.nav')
-<!-- navbar section end  -->
 
         <!-- technology section start  -->
         <div class="container-fluid mt-5 mb-5 blog">
@@ -198,7 +195,6 @@
         <!-- technology section end  -->
 
         <!-- footer section start  -->
-
         <div class="container-fluid footer">
             <div class="container">
                 <div class="row pt-5">
@@ -300,7 +296,6 @@
                 </div>
             </div>
         </div>
-
         <!-- footer section end  -->
 
         <!-- Bootstrap JavaScript Libraries -->
