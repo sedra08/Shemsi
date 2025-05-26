@@ -13,7 +13,7 @@
             <div class="p-6 text-gray-900">
 
                 @hasrole('user')
-                    <div>Welcome to the dashboard!</div>
+                    <div>Bienvenue sur le dashboard!</div>
                     @php
                         $motivationalQuotes = [
                             "Believe you can and you're halfway there. – Theodore Roosevelt",
@@ -75,7 +75,7 @@
                 @endhasrole
                     
                                 @hasrole('admin')
-                    <h1 class="text-2xl font-bold text-center mb-4">Statistics</h1>
+                    <h1 class="text-2xl font-bold text-center mb-4">Statistiques</h1>
 
                     <div class="flex justify-center items-center">
                         <canvas id="ordersChart" width="400" height="200"></canvas>
@@ -131,7 +131,7 @@
                         div.style.lineHeight = '32px';
                         div.style.background = '#ffab44';
                         div.style.marginBottom = '16px';
-                        div.innerHTML = 'WARNING: The system will be go down for maintenance on ' + event.time;
+                        div.innerHTML = 'ATTENTION : Le système sera arrêté pour maintenance le ' + event.time;
                         location.insertBefore(div, location.firstChild)
                     });
             })
@@ -283,7 +283,6 @@
 
                             let message = $(`<div class="bg-green-500 p-4 m-4 text-center text-white">A New appointment has been received with id: ${id} and time: ${appointment_time} on date: ${appointment_date}</div>`);
 
-                            // Prepend inside the mainDiv
                             mainDiv.prepend(message);
 
                         });
