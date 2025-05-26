@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>Shemsi</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
         name="viewport"
@@ -46,9 +45,7 @@
 </head>
 
 <body>
-<!-- navbar section start  -->
  @include('frontend.nav')
-<!-- navbar section end  -->
 
 <!-- hero section start  -->
 <div class="container-fluid pt-3">
@@ -252,40 +249,6 @@
         <div class="pt-3 pb-3 content">
             <h3 class="text-lg-center">Le dentiste réinvente ce que peut être l’expérience dentaire et établit fièrement une nouvelle norme en matière de soins aux patients.</h3>
         </div>
-        <!-- <div class="d-flex justify-content-center">
-                <div class="pt-3 pb-3 content" style="width: 51%;">
-                    <h3 class="text-center">Dentalist is re-imagining
-                        what
-                        the dental experience can
-                        be and proudly setting a new standard for
-                        patient
-                        care.</h3>
-
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="pt-3 pb-3 content" style="width: 51%;">
-                    <h3 class="text-center">Dentalist is re-imagining
-                        what
-                        the dental experience can
-                        be and proudly setting a new standard for
-                        patient
-                        care.</h3>
-
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="pt-3 pb-3 content" style="width: 51%;">
-                    <h3 class="text-center">Dentalist is re-imagining
-                        what
-                        the dental experience can
-                        be and proudly setting a new standard for
-                        patient
-                        care.</h3>
-
-                </div>
-            </div> -->
-
     </div>
 </div>
 <!-- about us section end  -->
@@ -765,7 +728,6 @@
 </div><br>
 <!-- Testimonial section end  -->
 
-
 <!-- book appointment section start  -->
 <div class="container-fluid appointment pb-5">
     <div class="container" data-aos="fade-up">
@@ -882,7 +844,6 @@
 <!-- book appointment section end  -->
 
 <!-- footer section start  -->
-
 <div class="container-fluid footer">
     <div class="container">
         <div class="row pt-5" data-aos="fade-up">
@@ -973,16 +934,10 @@
         </div>
     </div>
 </div>
-
 <!-- footer section end  -->
+    
 <script>
-    // fotorama jQuery
-    // $(document).ready(function(){
-    //     $(".fotorama")
-    // })
-
     AOS.init();
-
 </script>
 
 <!-- Bootstrap JavaScript Libraries -->
